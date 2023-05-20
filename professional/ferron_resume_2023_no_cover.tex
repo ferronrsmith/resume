@@ -1,0 +1,235 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same
+% directory as this .tex file. These files provide the resume style and themes
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{banking} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%   NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Ferron} % Your first name
+\familyname{Hanse} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{15 Corner Lewis \& Third Avenue}{Barataria, San Juan}
+\phone[mobile]{(868) 764 4172}
+\email{ferronrsmith@gmail.com}
+\homepage{ferronrsmith.github.io}                         % optional, remove / comment the line if not wanted
+\social[github]{ferronrsmith}
+\social[linkedin]{ferronrsmith}
+% \photo[70pt][0.4pt]{pictures/picture.eps} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+\quote{"The purpose of our lives is to be happy." \newline{} - Dalai Lama}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%   EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2013-2015}{Masters in Computer Science}{The University of West Indies}{St. Augustine}{\textit{}}{}  % Arguments not required can be left empty
+\cventry{2007-2010}{Bachelor in Computer Science}{The University of West Indies}{Mona}{\textit{}}{}  % Arguments not required can be left empty
+
+%\section{Masters Thesis}
+%
+%\cvitem{Title}{\emph{Using Computer Vision Action Classification Techniques to %Detect Drivers with Cellphones}}
+%\cvitem{Supervisors}{Dr. Wayne Goodridge}
+
+
+%----------------------------------------------------------------------------------------
+%   WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+%------------------------------------------------
+\cventry{2016--Present}{Technical Consultant}{\textsc{Tera Analytics}}{Toronto, Canada}{}{
+--
+\newline{}\newline{}
+Responsibilities:
+\begin{itemize}
+\item Participate in the process of software development including design and implementation
+\item Write code using one of the aforementioned client side and server side technologies 
+\item Building scalable multi-tenant infrastructures that can facilitate the processing of large quantities of data
+\item Elasticsearch design, implementation \& consultancy
+\end{itemize}}
+
+
+%------------------------------------------------
+\cventry{2022--Present}{Search Engineer}{\textsc{Perficient Latin America}}{Bogotá, Colombia}{}{
+--
+\newline{}\newline{}
+Responsibilities:
+\begin{itemize}
+\item Maintain and build new endpoints for an API that wraps the complexity of Apache Solr.
+\item Use SQS/SNS for off-loading indexing \& logging operations .
+\item Service is built on Docker and hosted in AWS ECS In use by millions of users.
+\item Built a standalone web-crawler in Java that crawls internal datasources and push the data to a central repository.
+\item The crawler as a rules engine and authentication/authorization mechanism that will log into various system, pull the information and package it into a JSON or some other format for consumption.
+\item Initially designed a search-ui component that interfaces with search-api for easy integration by consumers
+\end{itemize}}
+
+%------------------------------------------------
+\cventry{2021--2021}{Search Engineer}{\textsc{Truelogic Software}}{NY, United States}{}{
+--
+\newline{}\newline{}
+Responsibilities:
+\begin{itemize}
+\item Manage companies infrastructure deployed on AWS
+\item Design, develop \& manage Docker deployments
+\item Design \& manage CI/Deployment infrastructure
+\item Design, develop \& manage Search Experience for Splunk Internal consumers
+\end{itemize}}
+
+%------------------------------------------------
+\cventry{2020--2021}{System Administrator}{\textsc{Conscia Corporation}}{Toronto, Canada}{}{
+--
+\newline{}\newline{}
+Responsibilities:
+\begin{itemize}
+\item Manage companies infrastructure deployed across various cloud providers
+\item Manage azure \& remote data-centre instances
+\item Design, develop \& manage Docker/Kubernetes deployments
+\item Design \& manage CI/Deployment infrastructure
+\end{itemize}}
+
+%------------------------------------------------
+\cventry{2015--2020}{Principal Software Engineer}{\textsc{Conscia Corporation}}{Toronto, Canada}{}{
+--
+\newline{}\newline{}
+Responsibilities:
+\begin{itemize}
+\item Built agnostic cloud infrastructure following 12factor principles that can be deployed on Digital Ocean, AWS, Google Cloud or Azure in minutes.
+\item Migrated from infrastructure from docker swarm to Kubernetes
+\item Manage Conscia Cloud experience.
+\item Designed \& Developed Cloud Elasticsearch infrastructure.
+\item Designed a distributed customer CSR micro-services, with fault-tolerance for Fortune 500 client
+\item Designed an event system that manages 15M events per customer on a daily basis
+\item Migrated our DFS from in-house built to an s3 compatible architecture.
+\item Designed Enterprise-level re-usable ETL Tools
+\item Designed and implemented OAuth Service and middle-ware
+\item Built API back-end services using Node.JS, ArangoDB, Elasticsearch, Redis \& RabbitMQ
+\item Built front-end services using AngularJS \& ADF
+\end{itemize}}
+
+%------------------------------------------------
+\cventry{2016--2018}{Elasticsearch Consultant}{\textsc{CBC}}{Toronto, Canada}{}{
+--
+\newline{}\newline{}
+Responsibilities:
+\begin{itemize}
+\item Designed and implemented a data processing pipeline that moves data from in-house proprietary database to Elasticsearch
+\item Participate in architectural design sessions
+\end{itemize}}
+
+
+\newpage
+
+%------------------------------------------------
+\cventry{2014--2015}{Senior Software Developer \& Office Manager}{\textsc{GroupBy Inc}}{San Juan, Trinidad}{}{
+--
+\newline{}\newline{}
+Responsibilities:
+\begin{itemize}
+\item Built a phrase analyzer plugin for e-commerce back-end
+\item Rebuilt core API in C\#
+\item Designed and implement cloud scaling module in bash \& python for Google Compute engine
+\item Designed and implement Elastic-search multi-tenant client indexing service
+\item Participate in the process of software development including design, implementation, and maintenance in ASP.NET, Java or Python based software projects 
+\item Provide input to the functional specifications and the project requirements 
+\item Participate in development meetings, and assume full responsibility for your portion of the development effort 
+\item Write code using one of the aforementioned client side and server side technologies 
+\item Develop project documentation, including operational procedures, functional specifications, technical specifications 
+\item Complete peer code reviews and propose improvements and enhancements 
+\item Contribute to the knowledge base by developing best practice implementation documentation
+\newline\newline\newline\newline\newline
+\end{itemize}}
+
+
+
+%------------------------------------------------
+\cventry{2014--2014}{Senior Software Developer}{\textsc{Medullan Trinidad Limited}}{D'Adbadie, Trinidad}{}{
+--
+\newline{}\newline{}
+Medullan Senior Software Developers responsibilities:
+\begin{itemize}
+\item Designed and implemented a test suite for an enterprise level application
+\item Designed an image compression system that aided in the reduction of a clients website image by 85\% which offered optimization gains 
+\item Designed and implemented a OAuth2 provider and client library for an enterprise system
+\item Responsible for the implementation of client sample applications in Java, JavaScript, Python, ASP.NET.
+\item Researched and recommend software tools to management.
+\item Provided assistance to testers and support personnel as needed to determine system problems.
+\end{itemize}}
+
+
+%------------------------------------------------
+\cventry{2010--2014}{Software Developer}{\textsc{Medullan Trinidad Limited}}{D'Adbadie, Trinidad}{}{
+--
+\newline{}\newline{}
+Responsibilities:
+\begin{itemize}
+\item Designed and implemented a recommendation engine to integrate with a clients back-end search infrastructure.
+\item Designed and implemented a chat system protocol
+\item Designed a message protocol a multi-player game that sends game moves as messages that are interpreted and updated in the other players screen
+\item Responsible for delivering a component of custom software through the full software development life-cycle, including interaction design, solution definition, implementation, and support
+\end{itemize}
+}
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+%   COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages \& Technologies}
+
+%\cvitem{Basic}{Oracle 10/11g}
+%\cvitem{Intermidiate}{Groovy, Grails, Ruby, Ruby on Rails}
+\cvitem{Languages / Framework}{C\#, ASP.NET, Java, Spring Framework, JavaScript, NodeJS, Typescript, Python}
+\cvitem{Database Systems}{MS SQL Server, MySQL, PostgreSQL, SQLite}
+\cvitem{Environments}{Visual Studio, VS Code, Eclipse, IntelliJ}
+\cvitem{Testing Frameworks}{NUnit, JUnit, Mocha, Jest, Jasmine}
+\cvitem{Version Control Systems}{Subversion, GIT, Bazaar, Mercurial}
+\cvitem{Server Technologies}{IIS, Apache Servers, Jetty, JBoss, Nginx, Traefik}
+\cvitem{Operating Systems}{Windows, Linux and Mac OS X}
+\cvitem{NoSQL}{MongoDB, ElasticSearch, ArangoDB, Apache Solr}
+\cvitem{Container Technologies}{Docker, Vagrant, Kubernetes}
+\cvitem{Cloud Technologies}{Azure, DigitalOcean, GCS, AWS}
+\end{document}
