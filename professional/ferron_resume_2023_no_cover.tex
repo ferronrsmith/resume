@@ -25,7 +25,7 @@
 
 \documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 
-\moderncvstyle{banking} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
@@ -43,14 +43,14 @@
 
 % All information in this block is optional, comment out any lines you don't need
 \title{Curriculum Vitae}
-\address{15 Corner Lewis \& Third Avenue}{Barataria, San Juan}
+%\address{15 Corner Lewis \& Third Avenue}{Barataria, San Juan}
 \phone[mobile]{(868) 764 4172}
 \email{ferronrsmith@gmail.com}
 \homepage{ferronrsmith.github.io}                         % optional, remove / comment the line if not wanted
 \social[github]{ferronrsmith}
 \social[linkedin]{ferronrsmith}
 % \photo[70pt][0.4pt]{pictures/picture.eps} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
-\quote{"The purpose of our lives is to be happy." \newline{} - Dalai Lama}
+% \quote{"The purpose of our lives is to be happy." \newline{} - Dalai Lama}
 
 %----------------------------------------------------------------------------------------
 
@@ -80,7 +80,7 @@
 \section{Experience}
 
 %------------------------------------------------
-\cventry{2016--Present}{Technical Consultant}{\textsc{Tera Analytics}}{Toronto, Canada}{}{
+\cventry{2016--Present}{Technical Consultant}{\textsc{Tera Analytics}}{Port of Spain, Trinidad}{}{
 --
 \newline{}\newline{}
 Responsibilities:
@@ -91,6 +91,21 @@ Responsibilities:
 \item Elasticsearch design, implementation \& consultancy
 \end{itemize}}
 
+%------------------------------------------------
+\cventry{2018--Present}{Data Engineer}{\textsc{ElasticsearchDump}}{Port of Spain, Trinidad}{}{
+--
+\newline{}\newline{}
+Responsibilities:
+\begin{itemize}
+\item Maintain elasticdump ETL project 
+\item Implemented s3/minio connector for restoring/dumping Elasticsearch data
+\item Implemented a CSV transport that allows restoring/dumping Elasticsearch data
+\item Added split stream support to allow dumping of large datasets
+\item Refactor project to make more testable.
+\end{itemize}}
+
+
+%\newpage
 
 %------------------------------------------------
 \cventry{2022--Present}{Search Engineer}{\textsc{Perficient Latin America}}{Bogotá, Colombia}{}{
@@ -149,6 +164,8 @@ Responsibilities:
 \item Built front-end services using AngularJS \& ADF
 \end{itemize}}
 
+%\newpage
+
 %------------------------------------------------
 \cventry{2016--2018}{Elasticsearch Consultant}{\textsc{CBC}}{Toronto, Canada}{}{
 --
@@ -158,9 +175,6 @@ Responsibilities:
 \item Designed and implemented a data processing pipeline that moves data from in-house proprietary database to Elasticsearch
 \item Participate in architectural design sessions
 \end{itemize}}
-
-
-\newpage
 
 %------------------------------------------------
 \cventry{2014--2015}{Senior Software Developer \& Office Manager}{\textsc{GroupBy Inc}}{San Juan, Trinidad}{}{
@@ -198,6 +212,7 @@ Medullan Senior Software Developers responsibilities:
 \item Provided assistance to testers and support personnel as needed to determine system problems.
 \end{itemize}}
 
+%\newpage
 
 %------------------------------------------------
 \cventry{2010--2014}{Software Developer}{\textsc{Medullan Trinidad Limited}}{D'Adbadie, Trinidad}{}{
@@ -212,8 +227,6 @@ Responsibilities:
 \end{itemize}
 }
 
-\newpage
-
 %----------------------------------------------------------------------------------------
 %   COMPUTER SKILLS SECTION
 %----------------------------------------------------------------------------------------
@@ -222,7 +235,8 @@ Responsibilities:
 
 %\cvitem{Basic}{Oracle 10/11g}
 %\cvitem{Intermidiate}{Groovy, Grails, Ruby, Ruby on Rails}
-\cvitem{Languages / Framework}{C\#, ASP.NET, Java, Spring Framework, JavaScript, NodeJS, Typescript, Python}
+\cvitem{Languages}{C\#, ASP.NET, Java, Spring, JavaScript, NodeJS, Typescript, Python, Golang}
+\cvitem{ETL Technologies}{SQL, DataFlex DataPump, Pentaho, Elasticdump}
 \cvitem{Database Systems}{MS SQL Server, MySQL, PostgreSQL, SQLite}
 \cvitem{Environments}{Visual Studio, VS Code, Eclipse, IntelliJ}
 \cvitem{Testing Frameworks}{NUnit, JUnit, Mocha, Jest, Jasmine}
